@@ -524,6 +524,14 @@ fieldset[disabled] .btn-primary.active {
     border-color: rgba(255, 255, 255, .02)
 }
 
+.navbar-default .navbar-collapse.in {
+    background-color: white;
+}
+
+.navbar-default .navbar-collapse.in a {
+    color: #333333;
+}
+
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
