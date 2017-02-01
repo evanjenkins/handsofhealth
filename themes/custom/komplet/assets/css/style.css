@@ -532,6 +532,10 @@ fieldset[disabled] .btn-primary.active {
     color: #333333;
 }
 
+.menu-item--expanded.open {
+    background-color: gray;
+}
+
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -592,7 +596,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .navbar-default .nav .dropdown-menu li a {
-    padding: 15px 20px 15px 10px;
+    padding: 15px 20px 15px 20px;
     font-size: 11px;
     font-weight: 400;
     white-space: normal;
