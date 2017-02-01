@@ -1,0 +1,7 @@
+name: Editor Experience
+type: module
+description: Editor experience tools
+core: 8.x
+package: Custom HOH
+dependencies:
+- ckeditor
