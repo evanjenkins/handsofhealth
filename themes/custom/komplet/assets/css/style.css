@@ -533,7 +533,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .menu-item--expanded.open {
-    background-color: gray;
+    background-color: lightgray;
 }
 
 .navbar-default .navbar-toggle,
@@ -739,7 +739,7 @@ fieldset[disabled] .btn-primary.active {
     left: 0;
     /*background: #98d95b;*/
     /*background: #98f73f;*/
-    background: #b6ff72;
+    background: #a8c430;
     opacity: 0.5;
 }
 
