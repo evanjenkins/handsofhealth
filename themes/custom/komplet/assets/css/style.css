@@ -737,9 +737,9 @@ fieldset[disabled] .btn-primary.active {
     height: 100%;
     top: 0;
     left: 0;
-    /*background: #98d95b;*/
+    background: #98d95b;
     /*background: #98f73f;*/
-    background: #a8c430;
+    /*background: #a8c430;*/
     opacity: 0.5;
 }
 
