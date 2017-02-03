@@ -277,6 +277,27 @@
 		        </div>
 		    </div>
 		</div>
+	{% elseif display_id == 'the_team_offset' %}
+		<div class="section-inner nopadding-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 match-height">
+						<div class="vertical-center">
+							{{ footer }}
+						</div>
+					</div>
+					<div class="col-sm-9 match-height">
+						<div class="row">
+							<div class="col-xs-12">
+								<ul class="owl-carousel-paged testimonial-owl wow fadeIn list-unstyled" data-items="3" data-items-tablet="[768,2]" data-items-mobile="[479,1]">
+									{{ rows }}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	{% elseif display_id == 'block_section_content_related_items' %}
 		<div class="mb50">
 		    {{ header }}
