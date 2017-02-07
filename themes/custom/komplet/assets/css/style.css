@@ -740,9 +740,8 @@ fieldset[disabled] .btn-primary.active {
     /*background: #98d95b;*/
     /*background: #98f73f;*/
     /*background: #a8c430;*/
-    /*background: #A1F737;*/
-    background: rgba(152, 217, 91, 0.7);
-    /*opacity: 0.5;*/
+    background: #A1F737;
+    opacity: 0.5;
 }
 
 .no-overlay .backstretch-overlay {
