@@ -2471,3 +2471,7 @@ img {
     border-color: black;
     margin-bottom: 20px;
 }
+
+blockquote {
+    border-left-color: #a8c430;
+}
