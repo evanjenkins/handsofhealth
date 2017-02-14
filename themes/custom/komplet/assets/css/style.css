@@ -2475,3 +2475,7 @@ img {
 blockquote {
     border-left-color: #a8c430;
 }
+
+.video-embed-field-responsive-video + p {
+    margin-top: 20px;
+}
