@@ -331,7 +331,7 @@ function komplet_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
     //testimonials page
     $form['settings']['testimonials_page'] = array(
       '#type' => 'details',
-      '#title' => t('Other pages'),
+      '#title' => t('Testimonial page'),
       '#open' => FALSE,
     );
     $form['settings']['testimonials_page']['testimonials_page_header_bg'] = array(
