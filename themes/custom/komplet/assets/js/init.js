@@ -12,6 +12,10 @@ jQuery(document).ready(function($){
         "assets/img/agency/hero3.jpg"
       ], {duration: 8000, fade: 500});*/
 
+    $('#block-komplet-content > .modal').each(function() {
+      $(this).detach().appendTo('body');
+    });
+
     // OWL CAROUSEL //
     $('.owl-carousel').owlCarousel({
       navigation: false,
