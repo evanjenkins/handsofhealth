@@ -2481,21 +2481,21 @@ blockquote {
     height: auto !important;
 }
 
-.testimonial-content {
+.testimonial--content {
     position: absolute;
     text-align: center;
     width: 100%;
     top: 45%;
 }
 
-.testimonial-content p {
+.testimonial--content p {
     font: italic 300 2.125em 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     letter-spacing: .02em;
     color: #fff;
 }
 
-.testimonial-content .name {
+.testimonial--content .name {
     font-size: .75em;
     text-transform: uppercase;
     color: #a8c430;
