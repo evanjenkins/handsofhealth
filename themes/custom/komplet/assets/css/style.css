@@ -2516,6 +2516,7 @@ blockquote {
 .jssorb16 div:hover {
     background: #a8c430;
 }
-#block-komplet-content > .modal {
-    z-index: 10;
+
+.testimonial-view .col-md-6 {
+    margin-bottom: 30px;
 }
