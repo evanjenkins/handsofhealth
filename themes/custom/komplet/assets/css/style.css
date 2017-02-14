@@ -2501,6 +2501,10 @@ blockquote {
     color: white;
 }
 
+.testimonial--hidden-video {
+    display: none;
+}
+
 .testimonial--content .name {
     font-size: 1.2em;
     text-transform: uppercase;
@@ -2511,4 +2515,7 @@ blockquote {
 
 .jssorb16 div:hover {
     background: #a8c430;
+}
+#block-komplet-content > .modal {
+    z-index: 10;
 }
