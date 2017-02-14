@@ -2504,3 +2504,7 @@ blockquote {
     letter-spacing: .15em;
     margin-top: 3.66667em;
 }
+
+.jssorb16 div, .jssorb16 div:hover {
+    background: #a8c430;
+}
