@@ -327,6 +327,29 @@ function komplet_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
       '#description' => t('If you don\'t jave direct access to the server, use this field to upload your background image. Uploads limited to .png .gif .jpg .jpeg .apng .svg extensions'),
       '#element_validate' => array('other_page_header_bg_validate'),
     );
+
+    //testimonials page
+    $form['settings']['testimonials_page'] = array(
+      '#type' => 'details',
+      '#title' => t('Other pages'),
+      '#open' => FALSE,
+    );
+    $form['settings']['testimonials_page']['testimonials_page_header_bg'] = array(
+      '#type' => 'textfield',
+      '#title' => t('URL of the header background image'),
+      '#default_value' => theme_get_setting('testimonials_page_header_bg'),
+      '#description' => t('Enter a URL background image.'),
+      '#size' => 40,
+      '#maxlength' => 512
+    );
+    $form['settings']['testimonials_page']['testimonials_page_header_bg_upload'] = array(
+      '#type' => 'file',
+      '#title' => t('Upload header background image'),
+      '#size' => 40,
+      '#attributes' => array('enctype' => 'multipart/form-data'),
+      '#description' => t('If you don\'t jave direct access to the server, use this field to upload your background image. Uploads limited to .png .gif .jpg .jpeg .apng .svg extensions'),
+      '#element_validate' => array('testimonials_page_header_bg_validate'),
+    );
   // custom css
     $form['settings']['custom_css'] = array(
       '#type' => 'details',
@@ -634,6 +657,24 @@ function other_page_header_bg_validate($element, FormStateInterface $form_state)
       $form_state->setValue('other_page_header_bg', $file_url);
     }
  }
+}
+function testimonials_page_header_bg_validate($element, FormStateInterface $form_state){
+  global $base_url;
+
+  $validators = array('file_validate_extensions' => array('png gif jpg jpeg apng svg'));
+  $file = file_save_upload('testimonials_page_header_bg_upload', $validators, "public://testimonials_page", NULL, FILE_EXISTS_REPLACE);
+
+  if (!empty($file)) {
+    // change file's status from temporary to permanent and update file database
+    if ((is_object($file[0]) == 1)) {
+      $file[0]->status = FILE_STATUS_PERMANENT;
+      $file[0]->save();
+      $uri = $file[0]->getFileUri();
+      $file_url = file_create_url($uri);
+      $file_url = str_ireplace($base_url, '', $file_url);
+      $form_state->setValue('testimonials_page_header_bg', $file_url);
+    }
+  }
 }
 function logo_image_header_bg_validate($element, FormStateInterface $form_state){
   global $base_url;

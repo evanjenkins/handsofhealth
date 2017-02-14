@@ -601,7 +601,11 @@ function komplet_preprocess_page(&$variables) {
 	}else{
 		$variables['other_page_header_bg'] = '';
 	}
-	
+  if(!empty(theme_get_setting('testimonials_page_header_bg', 'komplet'))){
+    $variables['testimonials_page_header_bg'] = $base_url.theme_get_setting('testimonials_page_header_bg', 'komplet');
+  }else{
+    $variables['testimonials_page_header_bg'] = '';
+  }
 }
 	
 
