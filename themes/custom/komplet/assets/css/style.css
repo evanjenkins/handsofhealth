@@ -2528,3 +2528,11 @@ section[data-bg-color="#a8c430"] h4,
 section[data-bg-color="#a8c430"] h5 {
     color: white;
 }
+
+.webform-submission-special-offer-form input {
+    width: 100%;
+}
+
+.webform-submission-special-offer-form label {
+    display: block;
+}
