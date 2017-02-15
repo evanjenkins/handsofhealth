@@ -2525,8 +2525,17 @@ section[data-bg-color="#a8c430"] p,
 section[data-bg-color="#a8c430"] h2,
 section[data-bg-color="#a8c430"] h3,
 section[data-bg-color="#a8c430"] h4,
-section[data-bg-color="#a8c430"] h5 {
+section[data-bg-color="#a8c430"] h5,
+section[data-bg-color="#a8c430"] label,
+section[data-bg-color="#a8c430"] .btn {
     color: white;
+    border-bottom-color: white;
+}
+
+section[data-bg-color="#a8c430"] .btn:hover {
+    background-color: white;
+    color: black;
+    border-bottom-color: black;
 }
 
 .webform-submission-special-offer-form input {
