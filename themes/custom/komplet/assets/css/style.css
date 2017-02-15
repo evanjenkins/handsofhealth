@@ -2520,3 +2520,11 @@ blockquote {
 .testimonial-view .col-md-6 {
     margin-bottom: 30px;
 }
+
+section[data-bg-color="#a8c430"] p,
+section[data-bg-color="#a8c430"] h2,
+section[data-bg-color="#a8c430"] h3,
+section[data-bg-color="#a8c430"] h4,
+section[data-bg-color="#a8c430"] h5 {
+    color: white;
+}
