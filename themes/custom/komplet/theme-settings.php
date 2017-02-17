@@ -126,8 +126,7 @@ function komplet_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
       '#default_value' => theme_get_setting('blog_page_header_bg'),
       '#description' => t('Enter a URL background image.'),
       '#size' => 40,
-      '#maxlength' => 512,
-      '#attributes' => array('disabled' => 'disabled'),
+      '#maxlength' => 512
     );
     $form['settings']['blog']['blog_listing']['bg_wp']['blog_page_header_bg_upload'] = array(
       '#type' => 'file',
