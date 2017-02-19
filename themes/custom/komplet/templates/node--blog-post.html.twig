@@ -37,12 +37,12 @@
     	    </div>
     	</div>
 
-    	<div id="comments-list" class="col-sm-8 col-sm-offset-2 gap wow">
-    	    <div class="mt60 mb50 single-section-title">
-    	        <h3>{% if comment_count == 1 %}{{ comment_c }} comment{% else %}{{ comment_c }} comments{% endif %}</h3>
-    	    </div>
-    	    {{ content.field_blog_comments }}
-    	</div>
+    	{#<div id="comments-list" class="col-sm-8 col-sm-offset-2 gap wow">#}
+    	    {#<div class="mt60 mb50 single-section-title">#}
+    	        {#<h3>{% if comment_count == 1 %}{{ comment_c }} comment{% else %}{{ comment_c }} comments{% endif %}</h3>#}
+    	    {#</div>#}
+    	    {#{{ content.field_blog_comments }}#}
+    	{#</div>#}
     {% elseif blog_format == 'fullwidth' %}
     	<div id="post-content" class="col-sm-12 blog-item mb60 wow">
     	    <div class="row">
@@ -69,12 +69,12 @@
     	    </div>
     	</div>
 
-    	<div id="comments-list" class="col-sm-8 col-sm-offset-2 gap wow">
-    	    <div class="mt60 mb50 single-section-title">
-    	        <h3>{% if comment_count == 1 %}{{ comment_c }} comment{% else %}{{ comment_c }} comments{% endif %}</h3>
-    	    </div>
-    	    {{ content.field_blog_comments }}
-    	</div>
+    	{#<div id="comments-list" class="col-sm-8 col-sm-offset-2 gap wow">#}
+    	    {#<div class="mt60 mb50 single-section-title">#}
+    	        {#<h3>{% if comment_count == 1 %}{{ comment_c }} comment{% else %}{{ comment_c }} comments{% endif %}</h3>#}
+    	    {#</div>#}
+    	    {#{{ content.field_blog_comments }}#}
+    	{#</div>#}
     {% else %}
     	{% if single_sidebar == 'left' %}
             <div class="row">
@@ -97,12 +97,12 @@
                             <span>Google+</span>
                         </button>
                     </div>
-                    <div id="comments-list" class="gap wow">
-                        <div class="mt60 mb50 single-section-title">
-                            <h3>{% if comment_count == 1 %}{{ comment_c }} comment{% else %}{{ comment_c }} comments{% endif %}</h3>
-                        </div>
-                        {{ content.field_blog_comments }}
-                    </div>
+                    {#<div id="comments-list" class="gap wow">#}
+                        {#<div class="mt60 mb50 single-section-title">#}
+                            {#<h3>{% if comment_count == 1 %}{{ comment_c }} comment{% else %}{{ comment_c }} comments{% endif %}</h3>#}
+                        {#</div>#}
+                        {#{{ content.field_blog_comments }}#}
+                    {#</div>#}
                 </div>
             </div>
     	{% else %}
@@ -126,12 +126,12 @@
                             <span>Google+</span>
                         </button>
                     </div>
-                    <div id="comments-list" class="gap wow">
-                        <div class="mt60 mb50 single-section-title">
-                            <h3>{% if comment_count == 1 %}{{ comment_c }} comment{% else %}{{ comment_c }} comments{% endif %}</h3>
-                        </div>
-                        {{ content.field_blog_comments }}
-                    </div>
+                    {#<div id="comments-list" class="gap wow">#}
+                        {#<div class="mt60 mb50 single-section-title">#}
+                            {#<h3>{% if comment_count == 1 %}{{ comment_c }} comment{% else %}{{ comment_c }} comments{% endif %}</h3>#}
+                        {#</div>#}
+                        {#{{ content.field_blog_comments }}#}
+                    {#</div>#}
                 </div>
             </div>
     	{% endif %}
