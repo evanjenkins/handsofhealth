@@ -2548,7 +2548,9 @@ section[data-bg-color="#a8c430"] .btn:hover {
 }
 
 #edit-message {
-    font-size: 30px;
+    font-size: 24px;
+    color: #a8c430;
+    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
