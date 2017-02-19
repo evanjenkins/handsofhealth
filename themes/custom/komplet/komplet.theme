@@ -619,7 +619,7 @@ function komplet_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_s
 	    //print_r($form);
     }elseif(preg_match("/simplenews_subscriptions_block/", $form_id)){
     	//kint($form['actions']['unsubscribe']);
-	    $form['#attributes']['class'] = array('mailchimp');
+	    $form['#attributes']['class'] = array('mailchimp', 'section-inner', 'container', 'col-md-5', 'col-md-offset-4');
 	   	$form['actions']['subscribe']['#attributes']['class'] = array('btn', 'text-capitalize');
 	   	$form['actions']['unsubscribe']['#attributes']['class'] = array('btn', 'text-capitalize');
 	   	$form['actions']['update']['#attributes']['class'] = array('btn', 'text-capitalize');
