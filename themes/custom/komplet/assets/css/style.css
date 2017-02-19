@@ -2555,3 +2555,13 @@ section[data-bg-color="#a8c430"] .btn:hover {
     font-weight: bold;
     font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.mailchimp .field--type-email {
+    background: #eeeeee;
+}
+
+.mailchimp .btn {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
