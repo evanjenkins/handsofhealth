@@ -2546,3 +2546,10 @@ section[data-bg-color="#a8c430"] .btn:hover {
 .webform-submission-special-offer-form label {
     display: block;
 }
+
+#edit-message {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
