@@ -21,7 +21,7 @@
         {% if menu_level == 0 %}
           <li{{ item.attributes.addClass(classes) }}>
             {% if item.is_expanded %}
-              <a href="{{ item.url }}" class="dropdown-toggle" data-toggle="dropdown">{{ item.title }}  <span class="pe-7s-angle-down"></span></a>
+              <a href="{{ item.url }}" class="dropdown-toggle disabled" data-toggle="dropdown">{{ item.title }}  <span class="pe-7s-angle-down"></span></a>
               {% else %}
               <a href="{{ item.url }}">{{ item.title }}</a>
               {% endif %}
