@@ -2577,6 +2577,7 @@ section[data-bg-color="#a8c430"] .btn:hover {
 }
 
 .coupon-block > * {
+    margin: 0;
     border: 1px dashed;
     padding: 10px;
 }
