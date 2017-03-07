@@ -2566,6 +2566,11 @@ section[data-bg-color="#a8c430"] .btn:hover {
     width: 100%;
 }
 
+#footer-wrapper {
+    position: relative;
+    z-index: 101;
+}
+
 .coupon-block {
     position: fixed;
     bottom: 20px;
