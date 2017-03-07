@@ -2565,3 +2565,18 @@ section[data-bg-color="#a8c430"] .btn:hover {
     display: block;
     width: 100%;
 }
+
+.coupon-block {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    max-width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+
+.coupon-block > * {
+    border: 1px dashed;
+    padding: 10px;
+}
