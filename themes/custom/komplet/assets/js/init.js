@@ -41,7 +41,8 @@ jQuery(document).ready(function($){
       }
     });
 
-    $('.close-coupon').click(function() {
+    $('.close-coupon').click(function(e) {
+      e.preventDefault();
       setCookie('hoh_closed', 1, 14);
       $(this).parent('.coupon-block').toggle();
     });
