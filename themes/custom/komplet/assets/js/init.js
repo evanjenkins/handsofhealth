@@ -11,6 +11,40 @@ jQuery(document).ready(function($){
         "assets/img/agency/hero2.jpg",
         "assets/img/agency/hero3.jpg"
       ], {duration: 8000, fade: 500});*/
+    var getCookie = function (cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(";");
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === " ") { c = c.substring(1); }
+        if (c.indexOf(name) === 0) { return c.substring(name.length, c.length); }
+      }
+      return false;
+    };
+    var setCookie = function (cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + "; " + expires;
+    };
+    var checkCookie = function (cname) {
+      var cookie = getCookie(cname);
+      if (!cookie) {
+        setCookie(cname, 1, 14);
+        return true;
+      }
+    };
+
+    $('.coupon-block').each(function() {
+      if (getCookie('hoh_closed')) {
+        $(this).hide();
+      }
+    });
+
+    $('.close-coupon').click(function() {
+      setCookie('hoh_closed', 1, 14);
+      $(this).parent('.coupon-block').toggle();
+    });
 
     $('#block-komplet-content > .modal').each(function() {
       $(this).detach().appendTo('body');
