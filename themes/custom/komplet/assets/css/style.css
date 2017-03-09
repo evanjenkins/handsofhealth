@@ -2587,7 +2587,7 @@ section[data-bg-color="#a8c430"] .btn:hover {
     right: 10px;
 }
 
-.coupon-block > * {
+.coupon-block > div {
     margin: 0;
     border: 1px dashed;
     padding: 10px;
