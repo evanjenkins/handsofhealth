@@ -2581,6 +2581,12 @@ section[data-bg-color="#a8c430"] .btn:hover {
     padding: 5px;
 }
 
+.close-coupon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 .coupon-block > * {
     margin: 0;
     border: 1px dashed;
