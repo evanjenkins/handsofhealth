@@ -60,6 +60,7 @@ Thumbs.db
 # Custom
 core
 drush
+sites
 README.txt
 autoload.php
 composer.json
